@@ -29,18 +29,18 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
-}
+//tasks.withType<KotlinCompile> {
+//    kotlinOptions.jvmTarget = "1.8"
+//}
 
-tasks {
-    compileKotlin {
-        kotlinOptions {
-            jvmTarget = "1.8"
-            freeCompilerArgs = listOf("-Xallow-result-return-type", "-Xallow-kotlin-package")
-        }
-    }
-    compileTestKotlin {
-        kotlinOptions.jvmTarget = "1.8"
-    }
-}
+//tasks {
+//    compileKotlin {
+//        kotlinOptions {
+//            jvmTarget = "1.8"
+//            freeCompilerArgs = listOf("-Xallow-result-return-type", "-Xallow-kotlin-package")
+//        }
+//    }
+//    compileTestKotlin {
+//        kotlinOptions.jvmTarget = "1.8"
+//    }
+//}
