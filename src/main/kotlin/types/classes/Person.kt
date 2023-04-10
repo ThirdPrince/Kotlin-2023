@@ -27,4 +27,5 @@ fun main() {
     val nameRef = person::name
     ageRef.set(person, 20)
     nameRef.set("dhl")
+
 }
