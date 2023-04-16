@@ -1,4 +1,4 @@
-package types.extensions
+package basic.types.extensions
 
 /**
  * 扩展方法

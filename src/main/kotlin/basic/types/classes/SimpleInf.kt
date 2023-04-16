@@ -1,4 +1,4 @@
-package types.classes
+package basic.types.classes
 
 interface SimpleInf {
     val simpleProperty :Int

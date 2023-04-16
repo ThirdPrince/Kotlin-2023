@@ -1,4 +1,4 @@
-package types.eg
+package basic.types.eg
 
 data class Repo(
     val allow_forking: Boolean,

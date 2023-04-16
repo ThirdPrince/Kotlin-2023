@@ -1,4 +1,4 @@
-package types.eg
+package basic.types.eg
 
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -8,6 +8,7 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 /**
+ * @author dhl
  * 使用Retrofit 发起网络请求
  */
 interface GitHubApi{

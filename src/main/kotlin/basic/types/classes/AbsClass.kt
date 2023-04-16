@@ -1,4 +1,4 @@
-package types.classes
+package basic.types.classes
 
 abstract class AbsClass {
     abstract fun absMethod()

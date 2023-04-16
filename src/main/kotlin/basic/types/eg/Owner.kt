@@ -1,4 +1,4 @@
-package types.eg
+package basic.types.eg
 
 data class Owner(
     val avatar_url: String,
