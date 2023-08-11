@@ -27,7 +27,7 @@ public class Handler {
         }
         msg.target = this;
         delay = Math.max(delay, 0L);
-        msg.when = System.nanoTime() + delay;
+        msg.when = System.currentTimeMillis() + delay;
         mQueue.enqueueMessage(msg);
     }
 

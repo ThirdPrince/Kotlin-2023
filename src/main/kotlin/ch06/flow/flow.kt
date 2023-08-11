@@ -14,18 +14,18 @@ suspend fun main() {
 }
 
 
-fun sequences(){
-    val ins = sequence{
-        (1..3).forEach{
+fun sequences() {
+    val ins = sequence {
+        (1..3).forEach {
             yield(it)
         }
     }
 
-    for (i in ins){
+    for (i in ins) {
         println(i)
     }
 
-    for (i in ins){
+    for (i in ins) {
         println(i)
     }
 }
@@ -37,7 +37,7 @@ fun createFlow() = flow<Int> {
     }
 }.onEach { println(it) }
 
-suspend fun flows(){
+suspend fun flows() {
     val intFlow = flow<Int> {
         (1..3).forEach {
             emit(it)
@@ -45,10 +45,10 @@ suspend fun flows(){
         }
     }
 
-    val dispatcher = Executors.newSingleThreadExecutor{
-        Thread(it,"MyThread").also { it.isDaemon = true }
+    val dispatcher = Executors.newSingleThreadExecutor {
+        Thread(it, "MyThread").also { it.isDaemon = true }
     }.asCoroutineDispatcher()
-    GlobalScope.launch(dispatcher){
+    GlobalScope.launch(dispatcher) {
         intFlow.flowOn(Dispatchers.IO).collect {
             println(it)
         }

@@ -12,7 +12,7 @@ val githubApi by lazy {
     val retrofit = retrofit2.Retrofit.Builder()
         .client(OkHttpClient.Builder().addInterceptor {
             it.proceed(it.request()).apply {
-                println("request:${code()}")
+                println("request:${code()} ")
             }
         }.build())
         .baseUrl("https://api.github.com")

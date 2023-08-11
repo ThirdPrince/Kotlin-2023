@@ -284,7 +284,7 @@ public final class Message implements Delayed {
 
     @Override
     public long getDelay(TimeUnit unit) {
-        return unit.convert(when - System.nanoTime(), TimeUnit.MILLISECONDS);
+        return unit.convert(when - System.currentTimeMillis(), TimeUnit.MILLISECONDS);
     }
 
     @Override
